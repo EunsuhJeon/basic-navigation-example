@@ -2,8 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* header area */
 nav{
     padding: 32px 32px;
     min-height: 80px;
@@ -19,7 +29,7 @@ nav img{
     /* border: 1px solid yellow; */
     display: inline-block;
     /* Parent width - logo width - Menu <ul> width */
-    width: calc(100% - 40px - 268px);
+    width: calc(100% - 40px - 290px);
 }
 
 nav ul{
@@ -60,7 +70,82 @@ nav ul li a:active{
     color: green;
 }
 
-.footer-line{
+/* main area */
+main{
+    display: block;
+    height: calc(100% - 117.6px - 160.5px);
+}
+
+main h1{
+    padding: 20px;
+}
+
+.content-area{
+    display: inline-block; 
+    width: calc(100% - 250px); 
+    vertical-align: top;
+    height: 100%;
+    text-align: center;
+}
+
+.intro-section h2,
+.resources-section h2{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.intro-section img{
+    max-height: 170px;
+}
+
+.intro-section p,
+.resources-section a{
+    font-size: 13px;
+}
+
+.sub-nav{
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    vertical-align: top;
+    background-color: #373737;
+    text-align: center;
+}
+
+.sub-nav ul{
+    list-style: none;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+.sub-nav ul li a{
+    text-decoration: none;
+}
+
+.sub-nav h3{
+    color: white;
+    margin: 32px 0;
+}
+
+.sub-nav ul li{
+    margin-bottom: 10px;
+}
+
+.nav-list a:link,
+.nav-list a:visited{
+    color: rgb(96, 149, 255);
+}
+
+.nav-list a:hover{
+    color: rgb(229, 145, 0);
+}
+
+.nav-list a:active{
+    color: green;
+}
+
+/* footer area */
+#footer-line{
     border-bottom: 1px solid white;
     display: inline-block;
     /* Parent width - logo width - Menu <ul> width */
@@ -80,19 +165,6 @@ footer{
 footer ul{
     margin-bottom: 0;
     
-}
-
-.footer-nav-list a:link,
-.footer-nav-list a:visited{
-    color: rgb(96, 149, 255);
-}
-
-.footer-nav-list a:hover{
-    color: rgb(229, 145, 0);
-}
-
-.footer-nav-list a:active{
-    color: green;
 }
 
 footer p{
