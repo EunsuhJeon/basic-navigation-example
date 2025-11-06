@@ -59,3 +59,48 @@ nav ul li a:hover{
 nav ul li a:active{
     color: green;
 }
+
+.footer-line{
+    border-bottom: 1px solid white;
+    display: inline-block;
+    /* Parent width - logo width - Menu <ul> width */
+    width: calc(100% - 250px);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1f1f1f;
+    /* color: white; */
+}
+
+footer ul{
+    margin-bottom: 0;
+    
+}
+
+.footer-nav-list a:link,
+.footer-nav-list a:visited{
+    color: rgb(96, 149, 255);
+}
+
+.footer-nav-list a:hover{
+    color: rgb(229, 145, 0);
+}
+
+.footer-nav-list a:active{
+    color: green;
+}
+
+footer p{
+    color: white;
+    margin: 32px 0px;
+}
+
+footer div nav,
+footer div p{
+    font-size: 15px;
+}
